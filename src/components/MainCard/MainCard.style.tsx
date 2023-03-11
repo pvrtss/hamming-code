@@ -1,4 +1,30 @@
 import styled from "styled-components";
+import { ReactComponent as InfoIcon } from "../../assets/info.svg";
+import { CornerButtonProps } from "./MainCard.types";
+
+export const StyledInfo = styled(InfoIcon)`
+  fill: #3a3a3a;
+  width: 24px;
+  height: 24px;
+`;
+
+export const CornerButton = styled.button<CornerButtonProps>`
+  cursor: pointer;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-color: ${(props) => (props.primary ? "white" : "#5821f0")};
+  color: white;
+  font-family: inherit;
+  padding: ${(props) => (props.primary ? "7px 8px" : "12px")};
+  font-weight: bold;
+  :hover {
+    border: 2px solid #815de4;
+  }
+  :active {
+    background-color: white;
+    color: #5821f0;
+  }
+`;
 
 export const Centralize = styled.div`
   display: flex;
@@ -128,24 +154,6 @@ export const HeaderRow = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 80px;
-`;
-
-export const TestButton = styled.button`
-  cursor: pointer;
-  border-radius: 8px;
-  border: 2px solid transparent;
-  background-color: #5821f0;
-  color: white;
-  font-family: inherit;
-  padding: 12px;
-  font-weight: bold;
-  :hover {
-    border: 2px solid #815de4;
-  }
-  :active {
-    background-color: white;
-    color: #5821f0;
-  }
 `;
 
 export const ErrorAnswerWrap = styled.div`

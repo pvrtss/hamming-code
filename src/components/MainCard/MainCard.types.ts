@@ -1,3 +1,8 @@
 export type MainCardProps = {
-    onClick: React.MouseEventHandler;
+  onClickInfo: React.MouseEventHandler;
+  onClickTest: React.MouseEventHandler;
+};
+
+export type CornerButtonProps = {
+  primary?: boolean;
 };

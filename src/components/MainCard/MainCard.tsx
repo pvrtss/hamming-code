@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo, useState } from "react";
+import React, { useCallback, useState } from "react";
 import { check } from "../../utils/checks";
 import { decode } from "../../utils/decoder";
 import { encode } from "../../utils/encoder";
@@ -20,12 +20,16 @@ import {
   MainCardWrap,
   RightWrap,
   SideHeader,
-  TestButton,
+  StyledInfo,
+  CornerButton,
 } from "./MainCard.style";
 
 import { MainCardProps } from "./MainCard.types";
 
-export const MainCard: React.FC<MainCardProps> = ({onClick}) => {
+export const MainCard: React.FC<MainCardProps> = ({
+  onClickInfo,
+  onClickTest,
+}) => {
   const [code, setCode] = useState<string>("");
   const [inputCode, setInputCode] = useState<string>("");
   const [inputCheck, setInputCheck] = useState<string>("");
@@ -66,7 +70,7 @@ export const MainCard: React.FC<MainCardProps> = ({onClick}) => {
         <LeftWrap>
           <HeaderRow>
             <SideHeader>Кодирование</SideHeader>
-            <TestButton onClick={onClick}>Сo</TestButton>
+            <CornerButton onClick={onClickTest}>Сo</CornerButton>
           </HeaderRow>
           <LeftContent>
             <InputRow>
@@ -89,6 +93,9 @@ export const MainCard: React.FC<MainCardProps> = ({onClick}) => {
         <RightWrap>
           <HeaderRow>
             <SideHeader>Проверка</SideHeader>
+            <CornerButton primary onClick={onClickInfo}>
+              <StyledInfo />
+            </CornerButton>
           </HeaderRow>
           <LeftContent>
             <InputRow>
