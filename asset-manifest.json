@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/hamming-code/static/css/main.0fddb5f8.css",
+    "main.js": "/hamming-code/static/js/main.5b31c44e.js",
+    "static/js/787.18229c5f.chunk.js": "/hamming-code/static/js/787.18229c5f.chunk.js",
+    "static/media/info.svg": "/hamming-code/static/media/info.5a8861a628be40ac3d69410c5f0ccf6b.svg",
+    "index.html": "/hamming-code/index.html",
+    "static/media/close.svg": "/hamming-code/static/media/close.aac73cf0d96d956a64823afe21da95f9.svg",
+    "main.0fddb5f8.css.map": "/hamming-code/static/css/main.0fddb5f8.css.map",
+    "main.5b31c44e.js.map": "/hamming-code/static/js/main.5b31c44e.js.map",
+    "787.18229c5f.chunk.js.map": "/hamming-code/static/js/787.18229c5f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0fddb5f8.css",
+    "static/js/main.5b31c44e.js"
+  ]
+}
